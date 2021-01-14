@@ -10,13 +10,5 @@ import db
 #     return result_str
 
 
-def add_member(name):
-    pass
-
-
-def member_exists(name):
-    pass
-
-
 def add_bet(name, amount):
     pass
