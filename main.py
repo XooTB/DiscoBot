@@ -26,4 +26,4 @@ async def on_message(message):
         cont.place_bet(message.author, amount, 1.5, on)
 
 
-client.run()
+client.run(key)
