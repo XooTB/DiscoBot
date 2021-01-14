@@ -2,7 +2,7 @@ import discord
 
 client = discord.Client()
 
-
+key = ''
 @client.event
 async def on_ready():
     print('Successfully started!')
@@ -16,4 +16,4 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
-client.run('NzgxODk0MzcxNzk2MzIwMjU3.X8ER4Q.TnHShENO5glK-T5FjwHIfWKC0DA')
+client.run(key)
