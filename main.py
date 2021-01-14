@@ -1,9 +1,10 @@
 import discord
 import cont
+import os
 
 client = discord.Client()
 
-key = 'NzgxODk0MzcxNzk2MzIwMjU3.X8ER4Q.Xj2Spc0qanFD71KjetYRTxUeCK0'
+key = ''
 
 
 @client.event
@@ -25,4 +26,4 @@ async def on_message(message):
         cont.place_bet(message.author, amount, 1.5, on)
 
 
-client.run(key)
+client.run()
