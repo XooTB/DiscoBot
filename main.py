@@ -3,7 +3,7 @@ import cont
 
 client = discord.Client()
 
-key = ''
+key = 'NzgxODk0MzcxNzk2MzIwMjU3.X8ER4Q.Xj2Spc0qanFD71KjetYRTxUeCK0'
 
 
 @client.event
