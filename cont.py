@@ -23,3 +23,12 @@ def place_bet(name, amount, odds, betted):
         else:
             db.add_member(name)
             continue
+
+
+class Event:
+    outcome = False
+
+    def __init__(self, name, odd1, odd2):
+        self.name = name
+        self.odd1 = odd1
+        self.odd2 = odd2

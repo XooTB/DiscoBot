@@ -54,4 +54,9 @@ def add_bet(name, amount, odds, betted):
 
 def on_win(name):
     c.execute(f"SELECT win_amount FROM ongoing_bets WHERE username = '{name}'")
-    print(c.fetchone())
+    return c.fetchall()[0][0]
+
+
+def Settlement(name, outcome):
+    if outcome:
+        update_balance(name, on_win(name))
